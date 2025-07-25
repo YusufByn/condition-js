@@ -99,15 +99,19 @@ console.log(reduction);
 // un client peut avoir 20% de réduction sur ses achats si c'est son anniversaire ou qu'il a
 // un solde (ses dépenses) de plus de 1000 euros
 
-let birthday = true;
-let solde = 1000; 
+let birthday = false;
+let solde = 500; 
 let secondReduction;
 
-if (birthday = true || solde >= 1000) {
-    secondReduction = "20%";
-} else if ( birthday = false || solde < 1000 ) {
-    secondReduction ="no reduc mon pote"
+// mettre 2 == sinon ca marchera pas,
+if (birthday == true || solde >=1000) {
+    secondReduction = "réduction de 20%";
+} else if ( birthday == false || solde < 1000) {
+    secondReduction ="no reduc mon pote";
 }
+console.log(secondReduction);
+
+
 
 
 // bonus 3)
