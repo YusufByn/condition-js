@@ -103,12 +103,16 @@ let birthday = false;
 let solde = 500; 
 let secondReduction;
 
-// mettre 2 == sinon ca marchera pas,
+// mettre 2 == sinon ca marchera pas, les == effectuent une comparaison lâche entre deux valeurs
+// "||" veut dire OU, je dis donc la phrase suivante dans le if
+// Si birthday est == à true (vrai donc c'est son anniv) OU que le solde est supérieur ou égal à 1000 alors msg de reduc de 20%
 if (birthday == true || solde >=1000) {
     secondReduction = "réduction de 20%";
+// sinon si le birthday est == à false donc faux OU que le solde est inférieur à 1000 dans ce cas la pas de reduc
 } else if ( birthday == false || solde < 1000) {
     secondReduction ="no reduc mon pote";
 }
+// console log ici pr voir si ca fonctionne dans la console
 console.log(secondReduction);
 
 
